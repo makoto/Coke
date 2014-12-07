@@ -1,0 +1,9 @@
+common: &common
+  api_url: 'http://adaptive-test-api.herokuapp.com'
+development:
+  <<: *common
+
+test:
+  <<: *common
+production:
+  <<: *common

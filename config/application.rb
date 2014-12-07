@@ -13,6 +13,8 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+CONFIG = YAML.load_file('config/config.yml')[Rails.env]
+
 module Coke
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
