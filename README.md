@@ -40,9 +40,12 @@ Run the following commands from your terminal
 - DONE: When page is refreshed, display stored tweets.
 - DONE: Write README of how to use, and how to setup.
 - DONE: Instead of displaying the sentiment number, display the sentiment as a happy, sad or neutral face using these images:
-- When a user clicks on a user handle, another view is displayed, which shows all of the messages from that particular user.
+- NOT DONE: When a user clicks on a user handle, another view is displayed, which shows all of the messages from that particular user.
 
-NOTE: There are a few pending specs for testing edge case on highlighting coke related tweets.
+NOTE:
+
+- There are a few pending specs for testing edge case on highlighting coke related tweets.
+- There may be one failing spec (./spec/models/tweet_spec.rb:16:). Did not have time to debug
 
 ## Some considerations
 
