@@ -1,4 +1,5 @@
 class TweetsController < ApplicationController
+  respond_to :html, :json
   def index
     @tweets = begin
       Tweet.fetch.order("sentiment_score desc")
@@ -7,5 +8,6 @@ class TweetsController < ApplicationController
       flash[:alert] = message
       []
     end
+    respond_with @tweets
   end
 end

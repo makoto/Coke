@@ -7,11 +7,21 @@ A web application that displays messages that are all about “Coke”
 
 ## How to run the app
 
+  git clone REPO_URL
+  cd coke
+  bundle
+  rake db:migrate
+  rails s
+  Go to http://localhost:3000
 
 ## How to run your tests
 
+  rake db:test:prepare
+  rspec
 
 ## How to retrieve the data that the app stores
+
+  Get json data from http://localhost:3000/tweets.json
 
 ## TODO
 
