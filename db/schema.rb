@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141207132923) do
+ActiveRecord::Schema.define(version: 20141207161033) do
 
   create_table "tweets", force: true do |t|
     t.integer  "followers"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20141207132923) do
     t.string   "user_handle"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "counter",         default: 1
   end
 
 end
