@@ -9,7 +9,7 @@ A web application that displays messages that are all about “Coke”
 
 Run the following commands from your terminal
 
-    git clone REPO_URL
+    git clone https://github.com/makoto/Coke.git
     cd coke
     bundle
     rake db:migrate
