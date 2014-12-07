@@ -39,10 +39,13 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :development, :test do
+group :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'factory_girl'
   gem 'vcr'
   gem 'webmock'
+end
+
+group :development, :test do
   gem 'pry'
 end
