@@ -13,7 +13,6 @@
     <tr>
       <th>Handle</td>
       <th>Message</td>
-      <th>Sentiment score</td>
       <th>Emotion</td>
       <th>Counter</td>
     </tr>
@@ -23,7 +22,6 @@
     <tr>
       <td><%= tweet.user_handle %></td>
       <td><%= highlight(tweet.message).html_safe %></td>
-      <td><%= tweet.sentiment_score %></td>
       <td><%= image_tag("#{tweet.emotion}.png")%></td>
       <td><%= tweet.counter %></td>
     </tr>
