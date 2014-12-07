@@ -13,6 +13,7 @@ RSpec.describe TweetsController, :type => :controller do
       get 'index'
       expect(response).to be_success
       expect(flash[:alert]).to eq "There were problem getting response from twitter. Try again."
+      expect(assigns[:tweets].count).to eq 0
     end
   end
 end
