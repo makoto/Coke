@@ -15,13 +15,13 @@ RSpec.describe Tweet, :type => :model do
     it "has all the values" do
       expect(fetched.first.attributes).to eq({
        "counter" => 1,
-       "created_at" => DateTime.parse('Thu, 27 Sep 2012 16:15:41 UTC +00:00'),
+       "created_at" => DateTime.parse('Thu, 27 Sep 2012 16:15:41 +00:00'),
        "followers" => 25,
        "id" => 1,
        "message" => "Remember cola bottles?  Mmm...",
        "message_id" => 9,
        "sentiment_score" => 0.8,
-       "updated_at" => DateTime.parse('Thu, 27 Sep 2012 16:15:41 UTC +00:00'),
+       "updated_at" => DateTime.parse('Thu, 27 Sep 2012 16:15:41 +00:00'),
        "user_handle" => "@sweetie"
       })
     end
