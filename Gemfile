@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem	'rest-client'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
@@ -43,4 +44,5 @@ group :development, :test do
   gem 'factory_girl'
   gem 'vcr'
   gem 'webmock'
+  gem 'pry'
 end
