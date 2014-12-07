@@ -20,7 +20,7 @@
   <tbody>
     <tr>
       <td><%= tweet.user_handle %></td>
-      <td><%= tweet.message %></td>
+      <td><%= highlight(tweet.message).html_safe %></td>
       <td><%= tweet.sentiment_score %></td>
     </tr>
   </tbody>

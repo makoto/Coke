@@ -18,7 +18,7 @@ A web application that displays messages that are all about “Coke”
 - DONE: Create / page
 - DONE: Create "Fetch more messages"
 - DONE: Fetch message (user’s handle, the message text and the sentiment.)
-- Highlight ‘coke’, ‘coca-cola’ and ‘diet cola’.
+- DONE: Highlight ‘coke’, ‘coca-cola’ and ‘diet cola’.
 - Sorted by sentiment, in descending order
 - Count the number of duplicates
 - DONE Handle errors (RestClient::InternalServerError)
