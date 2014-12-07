@@ -46,6 +46,12 @@ NOTE:
 
 - There are a few pending specs for testing edge case on highlighting coke related tweets.
 - There may be one failing spec (./spec/models/tweet_spec.rb:16:). Did not have time to debug
+- I was supposed to store original tweets into Tweet.body but forgot about it.
+
+## Architecture choice
+
+- Ruby On Rails, because that's the one I am familier with the most. I was thinking about making a bit more js heavy and hopefully using something like Cucumbeer for end-to-end test but ran out of time.
+- I occasionary use MongoDB to store API data but decided not to becaseu I was less familier with it.
 
 ## Some considerations
 
@@ -53,5 +59,3 @@ NOTE:
 - Did not use any JS at all as they were not necessary.
 - This page automatically fetches the latest tweets on page load which were not so clearly stated on the spec.
 - I thought it would make sense to show time, but did not add because it was not in the spec (I asked questions via email but have not received reply)
-
-
