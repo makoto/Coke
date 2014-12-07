@@ -46,5 +46,29 @@ RSpec.describe Tweet, :type => :model do
         end
       end
     end
+
+    context 'emotion' do
+      %w{1 0.7 0.1}.each do |score|
+        it "#{score} is positive" do
+          expect(
+            FactoryGirl.build(:tweet, sentiment_score:score).emotion
+          ).to eq "positive"
+        end
+      end
+
+      %w{-1 -0.7 -0.1}.each do |score|
+        it "#{score} is negative" do
+          expect(
+            FactoryGirl.build(:tweet, sentiment_score:score).emotion
+          ).to eq "negative"
+        end
+      end
+
+      it "0 is neutral" do
+        expect(
+          FactoryGirl.build(:tweet, sentiment_score:0).emotion
+        ).to eq "neutral"
+      end
+    end
   end
 end

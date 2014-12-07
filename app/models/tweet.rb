@@ -21,4 +21,16 @@ class Tweet < ActiveRecord::Base
     end
     self
   end
+
+  def emotion
+    if sentiment_score > 0
+      "positive"
+    elsif sentiment_score < 0
+      "negative"
+    elsif sentiment_score == 0
+      "neutral"
+    else
+      raise "should not happen"
+    end
+  end
 end
