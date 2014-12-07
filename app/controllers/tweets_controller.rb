@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
     @tweets = begin
       Tweet.fetch
     rescue RestClient::InternalServerError => e
-      flash[:alert] = "There were problem getting response from twitter. Try again."
+      flash[:alert] = "There is a problem getting response from twitter. Try again."
       []
     end
   end

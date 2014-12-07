@@ -12,7 +12,7 @@ RSpec.describe TweetsController, :type => :controller do
     VCR.use_cassette('api_error') do
       get 'index'
       expect(response).to be_success
-      expect(flash[:alert]).to eq "There were problem getting response from twitter. Try again."
+      expect(flash[:alert]).to eq "There is a problem getting response from twitter. Try again."
       expect(assigns[:tweets].count).to eq 0
     end
   end
