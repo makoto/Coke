@@ -1,0 +1,30 @@
+<h1>Coke tweets</h1>
+
+<% if flash[:alert] %>
+  <div class="alert alert-danger">
+    <%= flash[:alert] %>
+  </div>
+<% end %>
+
+<%= link_to("Fetch more messages", "/", class:"btn btn-default") %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Handle</td>
+      <th>Message</td>
+      <th>Sentiment score</td>
+    </tr>
+  </thead>
+  <% @tweets.each do |tweet|  %>
+  <tbody>
+    <tr>
+      <td><%= tweet.user_handle %></td>
+      <td><%= tweet.message %></td>
+      <td><%= tweet.sentiment_score %></td>
+    </tr>
+  </tbody>
+  <% end %>
+</table>
+
+<%= link_to("Fetch more messages", "/", class:"btn btn-default") %>
