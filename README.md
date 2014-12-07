@@ -19,7 +19,7 @@ A web application that displays messages that are all about “Coke”
 - DONE: Create "Fetch more messages"
 - DONE: Fetch message (user’s handle, the message text and the sentiment.)
 - DONE: Highlight ‘coke’, ‘coca-cola’ and ‘diet cola’.
-- Sorted by sentiment, in descending order
+- DONE: Sorted by sentiment, in descending order
 - DONE: Count the number of duplicates
 - DONE Handle errors (RestClient::InternalServerError)
 - DONE: When page is refreshed, display stored tweets.

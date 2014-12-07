@@ -19,6 +19,6 @@ class Tweet < ActiveRecord::Base
         })
       end
     end
-    self.all
+    self
   end
 end
